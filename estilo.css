@@ -1,0 +1,354 @@
+* {box-sizing: border-box;}
+
+@font-face {font-family: 'titulo';src: url(fonts/goboldregular.ttf);}
+@font-face {font-family: 'texto';src: url(fonts/goboldlight.ttf);}
+@font-face {font-family: 'nav';src: url(fonts/JostLight.ttf);}
+
+:root {
+    --fondo: #3E1A2b;
+    --nav: #fbb3ca;
+    --sombreado: #faf6f9;
+    --link: #b21839;
+    --hover: #ed4968;
+}
+
+html {scroll-behavior: smooth;}
+body {margin: 0; background-color: var(--sombreado);}
+
+h1 {font-size: 3.5em;}
+h2 {font-size: 2.7em;padding: 40px;font-family: nav;}
+h3 {font-size: 2em; padding: 35px;font-family: nav;}
+p {font-size: 1.25em; line-height: 25px; font-family: nav;}
+ul {list-style: none;}
+li {font-size: 1.25em; padding: 20px;line-height: 25px;font-family: nav;}
+strong{font-family: texto;}
+h4{font-family: texto; font-size: 1.3em; padding: 20px; }
+a{font-family: nav; text-decoration: none; color: var(--nav);}
+a:hover{color: var(--link); transition: 0.5s;}
+
+#tipores a{
+    font-family: texto;
+    color: var(--hover);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 15%;
+    padding: 20px;
+    font-size: 1.3em;
+    /*box-shadow:  10px 5px 10px var(--sombreado); #6d6875aa*/
+    cursor: pointer;
+}
+
+#tipores a:hover{
+    font-family: titulo;
+}
+
+button{
+    background-color: var(--sombreado); 
+    box-shadow:  10px 5px 20px var(--fondo);
+    border-color: var(--fondo); 
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+}
+
+button :hover{
+    color: var(--link); /*#ffb4a2*/
+    transition: 0.8s;
+}
+
+.cont {
+    padding: 10%;
+}
+
+.container {
+    max-width: 1300px;
+    margin: auto;
+}
+
+header {
+    background-color: var(--nav);/*#b53542*/
+}
+
+.textoizquierda{
+    padding: 15px;
+    text-align: center;
+}
+
+.texto {
+    padding: 15px;
+    text-align: center;
+}
+
+header .logo {
+    margin: 0;
+    padding: 25px
+        /*arriba*/
+        30px
+        /*costado*/
+    ;
+    font-family: 'titulo';
+    font-size: 2em;
+    color: var(--fondo);
+}
+
+header .container {
+    display: flex;
+    flex-direction: column;
+    /*se ordenen en columna*/
+    align-items: center;
+    /*para centrarlos horizontalmente*/
+}
+
+nav {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    padding-bottom: 25px;
+}
+
+header a {
+    padding: 5px 12px;
+    text-decoration: none;
+    font-family: 'nav';
+    font-size: 1.5em;
+    color: #ffffff;
+    transition: .4s;
+}
+
+header a:hover {
+    color: var(--fondo);
+}
+
+#hero {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    flex-direction: column;
+    height: 350px;
+    color: var(--sombreado);
+    background-image: linear-gradient(0deg,
+            rgba(255, 255, 255, 0.4),
+            rgba(55, 55, 55, 0.4)), url(ima/neon.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+    font-family: 'titulo';
+}
+
+#flex{
+    background-color: var(--fondo);color: var(--sombreado);
+}
+
+#flex .container {
+    text-align: center;
+    padding: 200px 12px;
+}
+
+#dos {
+    color: var(--fondo);
+}
+
+.oculto{
+    display: none;
+}
+
+.mostrar{
+    display: block; 
+}
+
+#perso {
+    background-color: var(--fondo); /*#e5989b*/
+    color: var(--sombreado);
+    text-align: initial;
+}
+
+#perso .container {
+    padding: 200px 12px;
+}
+
+#root {
+    background-color: var(--fondo);
+    color: var(--sombreado);
+    text-align: initial;
+    padding: 100px 20px;
+}
+
+
+#tipores .container {
+    text-align: center;
+    padding: 12px;
+}
+
+footer {
+    background-color: var(--link);
+    padding: 35px;
+}
+
+footer p {
+    margin: 0;
+    color: var(--sombreado);
+}
+
+footer a {
+    text-decoration: none;
+    color: var(--fondo);
+    display: block;
+}
+
+footer a:hover {
+    transition: .4s;
+    color: var(--sombreado);/*#ffb4a2*/
+}
+
+footer .container {
+    height: 200px;
+    line-height: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+@media (min-width: 560px){
+    button{
+        width: 60%;
+        display: block;
+        margin: auto;
+    }
+}
+
+@media (min-width: 500px){
+    button{
+        width: 70%;
+        display: block;
+        margin: auto;
+    }
+}
+
+@media (min-width: 320px){
+    button{
+        width: 100%;
+        display: block;
+        margin: auto;
+    }
+}
+
+@media(max-width:370px){
+    #perso .textoizquierda h2{
+        margin: 0;
+        padding: 0px;
+        padding-bottom: 35px;
+    }
+}
+
+
+@media (min-width: 759px){
+    #hero{
+        background-image:  linear-gradient(
+            0deg,
+            rgba(0, 0, 0, 0.5),
+            rgba(0, 0, 0, 0.5)
+        ), url(ima/neon2.jpg);
+    }
+
+    header .container{
+        flex-direction: row; 
+        justify-content: space-between;
+    }
+
+    nav{
+        flex-direction: row; 
+        padding-bottom: 0;
+        font-size: smaller;
+    }
+
+    #hero h1{
+        font-size: 5em;
+    }
+
+    #flex .container{
+        display: flex;
+        justify-content: space-evenly;
+    }
+
+    #flex .texto1{
+        width: 50%;
+        max-width: 600px;
+        text-align: initial;
+        padding-left: 30px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    #flex .imag{
+        background-image: url(ima/frame.png);
+        height: 500px;
+        background-position: center;
+        width: 50%;
+    }
+
+    #perso .container{
+        display: flex;
+        justify-content: space-evenly;
+    }
+
+
+    .textoizquierda{
+        width: 50%;
+        padding-right: 30px;
+        text-align: initial;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    #perso .imag{
+        background-image: url(ima/mobile.jpg);
+        height: 500px;
+        background-size: cover;
+        background-position: center;
+        width: 50%;
+    }
+
+    #tipores .container{
+        display: flex;
+        justify-content: space-evenly;
+    }
+
+    #tipores .texto1{
+        width: 50%;
+        max-width: 600px;
+        text-align: initial;
+        padding-left: 30px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    #tipores .imag{
+        background-image: url(ima/neon4.jpg);
+        height: 500px;
+        background-position: center;
+        width: 50%;
+    }
+
+    #color .container{
+        display: flex;
+        justify-content: space-evenly;
+        padding: 15px;
+    }
+
+    #color .imag{
+        margin: 15px;
+        background-image: url(ima/neon4.jpg);
+        height: 500px;
+        background-size: cover;
+        background-position: center;
+        width: 50%;
+    }
+
+}

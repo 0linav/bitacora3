@@ -1,0 +1,278 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="reset.css">
+    <link rel="stylesheet" href="estilo.css">
+    <title>Bitácora 3</title>
+</head>
+
+<body>
+    <header>
+        <div class="container">
+            <p class="logo">Olinav</p>
+            <nav>
+                <a href="#flex">Frameworks</a>
+                <a href="#dos">SVG</a>
+                <a href="#perso">Mobile First</a>
+                <a href="#tipores">Proceso de diseño</a>
+            </nav>
+        </div>
+    </header>
+    <section id="hero">
+        <h1>Bitácora 3</h1>
+    </section>
+    <main>
+        <section id="flex">
+            <div class="container">
+                <div class="imag"></div>
+                <div class="texto1">
+                    <h2>Frameworks</h2>
+                    <p>Un framework es un conjunto de herramientas, librerías, convenciones y hojas de estilos que
+                        pretenden encapsular las tareas repetitivas en módulos genéricos fácilmente reutilizables.</p>
+                </div>
+            </div>
+        </section>
+        <section class="cont" id="dos">
+            <div class="container">
+                <h3>SVG</h3>
+                <p>SVG es un lenguaje de marcado para describir imágenes y aplicaciones de gráficos bidimensionales, y
+                    un conjunto de interfaces de scripts de gráficos relacionados.</p>
+                <p>SVG es un formato de gráficos libre de derechos de uso generalizado desarrollado y mantenido por el
+                    W3C SVG Working Group. Este es un grupo público, que trabaja en una lista de correo abierta y que
+                    agradece sus comentarios.</p>
+                <p>Los archivos SVG son gráficos vectoriales bidimensionales, tanto estáticos como animados en formato
+                    XML. Se puede utilizar con imágenes como formas, trazados, texto y efectos de filtro.</p>
+
+                <div class="texto">
+                    <button onclick="funcion2()" id="textOculto3_btn">
+                        <h3>Origen de SVG</h3>
+                    </button>
+                    <script>
+                        function funcion2() { document.getElementById("textOculto3").classList.toggle("mostrar") }
+                    </script>
+                    <span class="oculto" id="textOculto3">
+                        <p>En 1998, el panorama se había estabilizado un poco, y este año hubo seis presentaciones en
+                            competencia al W3C en el área de gráficos vectoriales web:</p>
+                        <ul>
+                            <li>Web Schematics: de CCLRC</li>
+                            <li>PGML: de Adobe IBM, Netscape y Sun.
+                            </li>
+                            <li>VML: de Autodesk, Hewlwtt-Packard, Macromedia y Microsoft
+                            </li>
+                            <li>Hyper Graphics Markup Languaje: de Orange, PCSL y PRP</li>
+                            <li>WebCGM: de Boing, CCLRC, Inso, JISC y Xerox.
+                            </li>
+                            <li>DrawML: de Excosoft.
+                            </li>
+                        </ul>
+                        <p>Como resultado, se creo el SVG WG (working group). Las compañías tenían diferentes ideas
+                            sobre sus especificaciones. Por ejemplo, Adobe dijo que PGML era solo una propuesta y estaba
+                            felices de que W3C lo modificara de alguna manera. Pero Microsoft dijo que VML era
+                            documentación de un producto ya implementado y que W3C no estaba autorizado a realizar
+                            ningún cambio. El SVG decidió no “desarrollar” ninguna de las presentaciones, sino
+                            desarrollar un nuevo lenguaje.</p>
+                    </span>
+                </div>
+                <div class="texto">
+                    <button onclick="funcion1()" id="textOculto2_btn">
+                        <h3>Soporte de Navegador</h3>
+                    </button>
+                    <script>
+                        function funcion1() { document.getElementById("textOculto2").classList.toggle("mostrar") }
+                    </script>
+                    <span class="oculto" id="textOculto2">
+                        <p>SVG es compatible con todos los navegadores modernos para computadoras de escritorio y
+                            móviles. Algunas funciones, como la animación SMIL y las fuentes SVG, no son tan
+                            compatibles.
+                            Existen muchas herramientas de creación de SVG, y la exportación a SVG es compatible con las
+                            principales herramientas de creación de gráficos vectoriales.
+                        </p>
+                        <ul>
+                            <li><strong>Google Chrome</strong>: Desde su primera versión.</li>
+                            <li><strong>Microsoft Edge</strong>: Soporta SVG desde la primera versión.
+                            </li>
+                            <li><strong>Mozilla Firefox</strong>: Implementa SVG desde su versión 1.5.
+                            </li>
+                            <li><strong>Internet Explorer</strong>: Microsoft empezó a dar soporte a SVG desde la
+                                versión.</li>
+                            <li><strong>Opera</strong>: De forma nativa.
+                            </li>
+                            <li><strong>Apple Safari</strong>: Desde la versión 3.1.
+                            </li>
+                        </ul>
+                    </span>
+                </div>
+                <div class="texto">
+                    <button onclick="funcion3()" id="textOculto4_btn">
+                        <h3>Formatos de imágenes digitales</h3>
+                    </button>
+                    <script>
+                        function funcion3() { document.getElementById("textOculto4").classList.toggle("mostrar") }
+                    </script>
+                    <span class="oculto" id="textOculto4">
+                        <p>Los archivos SVG son compactos y ofrecen gráficos de alta calidad en Internet, en impresoras
+                            e incluso en dispositivos portátiles. El usuario puede aumentar la vista de un SVG en la
+                            pantalla sin sacrificar la calidad.</p>
+                        <p>Esta basado en XML y ofrece muchas ventajas tanto para desarrolladores como para usuarios. Se
+                            puede utilizar XML y JavaScript para crear gráficos web que respondan a las acciones del
+                            usuario con efectos sofisticados, como el resaltado, la información de herramientas, el
+                            audio y las animaciones.</p>
+                    </span>
+                </div>
+                <div class="texto">
+                    <button onclick="funcion()" id="textOculto_btn">
+                        <h3>Ventajas</h3>
+                    </button>
+                    <script>
+                        function funcion() { document.getElementById("textOculto").classList.toggle("mostrar") }
+                    </script>
+                    <span class="oculto" id="textOculto">
+                        <ul>
+                            <li>Crear y editar con cualquier editor de código o texto.</li>
+                            <li>Imprimir con alta calidad en cualquier resolución.</li>
+                            <li>Ampliar sin perder calidad de imagen o grafico.</li>
+                            <li>Los gráficos SVG NO pierden calidad si se amplían o cambian de tamaño.</li>
+                            <li>Las imágenes SVG son escalables.</li>
+                            <li>SVG es un estándar abierto.</li>
+                        </ul>
+                    </span>
+                </div>
+            </div>
+        </section>
+        <section id="perso">
+            <div class="container">
+                <div class="textoizquierda">
+                    <h2>Mobile First</h2>
+                    <p>El Mobile First es una filosofía que perfecciona el proceso de diseño de cualquier sitio web,
+                        buscando mejorar el diseño web adaptable. Esta nueva forma de diseñar, surge de los dispositivos
+                        móviles u de cualquier pantalla de tamaño menor, en la que se parte de una escala en aumento
+                        hasta adaptar el diseño a pantallas de gran tamaño.</p>
+                </div>
+                <div class="imag"></div>
+            </div>
+        </section>
+        <section id="root">
+            <div class="container">
+                <div class="texto">
+                    <h3>Proceso</h3>
+                    <p>Cuando la etapa de diseño para un dispositivo de tamaño reducido está listo, el siguiente paso es
+                        estirar la ventana hasta que el diseño empiece a deformarse o a verse mal. En este momento se
+                        deben definir los media queries para pantallas de mayor dimensión.
+                    </p>
+                    <p>Mobile First hace más sencilla la tares de diseñar cualquier pagina web, de manera gradual el
+                        diseño se ira acomodando a los distintos tamaños de pantalla, adaptando el layout al tiempo.
+                        Diseñas a partir de pantallas grandes es menos practico, requiere mas esfuerzo reducir que ir
+                        aumentando el espacio.</p>
+                    <h3>Ventajas</h3>
+                    <p>Cuando un sitio web se desarrolla para desktop, la versión mobile necesita muchas adecuaciones en
+                        los elementos para que todo funciones en el espacio del celular. En algunos casos, muchos
+                        componentes se eliminan para que el sitio web quede perfecto en el ambiente mobile. </p>
+                    <p>Agregar información en una pantalla mas grande es relativamente fácil si la comparamos con el
+                        espacio de un dispositivo móvil; lo cual no permite el exceso de información. Por esta razón es
+                        necesario eliminar información de poca importancia para ofrecer una mejor experiencia al
+                        usuario.
+                    </p>
+                    <h3>Retos</h3>
+                    <p>Pero además de esto, un sitio web Mobile First nos trae diversos desafíos de diseño y usabilidad
+                        como:
+                    </p>
+                    <ul>
+                        <li>El tamaño de la pantalla reducido</li>
+                        <li>La conexión móvil limitada</li>
+                        <li>El comportamiento de los usuarios</li>
+                        <li>Las pantallas “touch”, etc.</li>
+                    </ul>
+                    <h3>Posicionamiento</h3>
+                    <p>Google obliga a los sitios web a mantener un responsive design, si esto no se cumple la
+                        visibilidad de la página cada vez será menor y la efectividad SEO (search engine optimization),
+                        disminuirá por las perdidas de los clientes que accedan a la red a través de sus móviles.</h3>
+                </div>
+            </div>
+        </section>
+        <section class="cont" id="tipores">
+            <div class="texto">
+                <h2>Proceso de Diseño</h2>
+                <button onclick="funcion5()" id="textOculto5_btn">
+                    <h3>Etapa de planeación</h3>
+                </button>
+                <script>
+                    function funcion5() { document.getElementById("textOculto5").classList.toggle("mostrar") }
+                </script>
+                <span class="oculto" id="textOculto5">
+                    <p>Estas fases se consideran como genéricas que se presentan en varias de las categorías de
+                        las
+                        metodologías de diseño web. Su implementación garantiza una mayor eficacia al momento de
+                        tomar
+                        decisiones de diseño.</p>
+                    <h4>Identificación de los objetivos del proyecto</h4>
+                    <p>Se pueden incorporar aquellos objetivos que sean relevantes para los usuarios, por
+                        ejemplo,
+                        la
+                        optimización de imágenes, la velocidad de carga, la interacción, etc.</p>
+                    <h4>Los requisitos del cliente</h4>
+                    <p>Se pueden incluir pautas con la finalidad de llegar al mayor publico posible.</p>
+                    <h4>Análisis de la competencia</h4>
+                    <p>Se puede realizar observando los sitios web de la competencia para ofrecer funciones que
+                        los
+                        competidores no.</p>
+                    <h4>Investigación de la audiencia</h4>
+                    <p>Para la ultima fase de la etapa de planeación se puede recopilar datos sobre el
+                        comportamiento de
+                        los usuarios con el fin de generar una mejor estrategia de contenido y diseño.</p>
+                </span>
+            </div>
+            <div class="texto">
+                <button onclick="funcion6()" id="textOculto6_btn">
+                    <h3>Etapa de diseño</h3>
+                </button>
+                <script>
+                    function funcion6() { document.getElementById("textOculto6").classList.toggle("mostrar") }
+                </script>
+                <span class="oculto" id="textOculto6">
+                    <p>El objetivo de la etapa diseño de una metodología web es crear una estructura visual y funcional
+                        que cumpla con los requisitos del proyecto, con las necesidades del usuario y contribuya al
+                        éxito general del sitio web.
+                    <p>Estas etapas son fundamentales en el proceso de diseño y desarrollo de un sitio web, y cada una
+                        contribuye a la creación de una experiencia de usuario efectiva y satisfactoria.
+                        La etapa de diseño consta de las siguientes fases:</p>
+                    <h4>Desarrollo del mapa de sitio</h4>
+                    <p>En esta etapa, se crea una representación visual de la estructura del sitio web. El mapa del
+                        sitio muestra la jerarquía de las páginas, la organización de la información y las relaciones
+                        entre ellas. Esto ayuda a definir la navegación del sitio y a planificar la distribución del
+                        contenido.</p>
+                    <h4>Creación de wireframes y prototipos</h4>
+                    <p>Los wireframes son esquemas básicos y sin diseño visual que representan la disposición de los
+                        elementos en cada página del sitio web.
+                        Los prototipos son versiones interactivas y más avanzadas de los wireframes, que permiten
+                        simular la navegación y la funcionalidad del sitio. Estas herramientas ayudan a visualizar la
+                        estructura y el flujo de la interfaz de usuario antes de pasar al diseño final.
+                    </p>
+                    <h4>Diseño visual o maqueta</h4>
+                    <p>En esta etapa, se aplica el diseño visual a los wireframes. Las maquetas son versiones estáticas
+                        y detalladas del sitio web, se utilizan para definir la apariencia estética del sitio,
+                        incluyendo colores, tipografía, imágenes y otros elementos visuales.</p>
+                    <p>La finalidad es crear el aspecto final del sitio web. Esto incluye el diseño de todas las
+                        páginas, la optimización de la legibilidad y la accesibilidad, y la incorporación de elementos
+                        visuales que reflejen la identidad de la marca.</p>
+                    <h4>Creación de contenidos</h4>
+                    <p>Se desarrolla el contenido del sitio web, incluyendo texto, optimización de imágenes, videos,
+                        gifs animados, iconos y otros recursos multimedia. El contenido debe ser relevante, claro y
+                        atractivo para los usuarios, y debe estar optimizado para motores de búsqueda (SEO) y para
+                        cumplir con los objetivos del sitio web.</p>
+                </span>
+            </div>
+            <a href="#hero">Inicio</a>
+        </section>
+    </main>
+    <footer>
+        <div class="container">
+            <a href="https://oly-219630.000webhostapp.com/5S/Inicio/">Diseño Web HTML5 y CSS3 Adaptativo.</a>
+            <p>&copy;Olinav 2024</p>
+        </div>
+    </footer>
+</body>
+
+</html>
